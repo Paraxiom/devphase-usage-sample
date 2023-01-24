@@ -32,7 +32,7 @@ const config : ProjectConfigOptions = {
         blockTime: 6000, // default block time for direct stack running
         version: 'latest', // version which you want to pull from official repository (tag name) or "latest" one
         node: {
-            port: 9944, // ws port
+            port: 19944, // ws port
             binary: '{{directories.stacks}}/{{stack.version}}/phala-node',
             workingDir: '{{directories.stacks}}/.data/node',
             envs: {},
@@ -45,7 +45,7 @@ const config : ProjectConfigOptions = {
             timeout: 10000,
         },
         pruntime: {
-            port: 8000, // server port
+            port: 18000, // server port
             binary: '{{directories.stacks}}/{{stack.version}}/pruntime',
             workingDir: '{{directories.stacks}}/.data/pruntime',
             envs: {},
